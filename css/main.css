@@ -1,0 +1,69 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+
+:root {
+  --edb24e: #edb24e;
+  --333333: #333;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.nav {
+  padding-top: 40px;
+}
+
+.nav-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+/* ---- Ліва частина: меню ---- */
+.nav-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-list__link {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--333333);
+  transition: color 0.3s;
+}
+
+.nav-list__link:hover {
+  color: var(--edb24e);
+}
+
+/* ---- Центр: логотип ---- */
+.nav__logo {
+  justify-self: center;
+}
+
+/* ---- Права частина: кнопка ---- */
+.nav__btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 12px 30px;
+  background: var(--edb24e);
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #dca63f;
+}
